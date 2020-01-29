@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Alex van Winkel</title>
+         <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+			<!-- TEXT - Alex van Winkel -->
+			<a-text position="0 4 -4" font="kelsonsans" 
+					width="10" opacity="0.7" transparent="true" align="center" value="Alex van Winkel"></a-text>
+			<a-text position="0 4 -4.1" font="kelsonsans" 
+					width="10.1" opacity="0.5" transparent="true" align="center" color="black" value="Alex van Winkel"></a-text>
+			<!-- TEXT - Instructor -->
+			<a-text position="0 3.5 -4" font="kelsonsans" 
+					width="7" opacity="0.7" transparent="true" align="center" color="#cc99FF" value="Instructor"></a-text>
+			<a-text position="0 3.5 -4.1" font="kelsonsans" 
+					width="7.1" opacity="0.7" transparent="true" align="center" color="black" value="Instructor"></a-text>
+			<!-- TEXT - [W,A,S,D] -->		
+			<a-text position="0 -1 -4" font="kelsonsans"
+					width="7" opacity="0.7" transparent="true" align="center" color="#22FF11" value="Use [W,A,S,D] to move"></a-text>
+			<a-text position="0 -1 -4.1" font="kelsonsans"
+					width="7.1" opacity="0.7" transparent="true" align="center" color="black" value="Use [W,A,S,D] to move"></a-text>
+					
+			<a-box 	position="0 1 -5" depth="0.1" height="4" width="3" src="__homepage\Alex.png"
+					animation="property: rotation; to: 0 360 0; loop: true; dir: alternate; dur: 10000">
+			</a-box>
+			<a-box 	position="5 1 -5" depth="0.1" height="4" width="3" src="__homepage\Alex_panel_right.png"
+					animation="property: opacity; from: 0.6 to: 2; loop: true; dir: alternate; dur: 5000">
+			</a-box>
+			<a-box 	position="-5 1 -5" depth="0.1" height="4" width="3" src="__homepage\Alex_panel_left.png"
+					animation="property: opacity; from: 0.6 to: 2; loop: true; dir: alternate; dur: 5000">	
+			</a-box>
+			
+			<a-box 	position="10 1 -5" depth="0.1" height="4" width="3" src="__homepage\Alex_panel_RR.png"
+					animation="property: opacity; from: 0.6 to: 2; loop: true; dir: alternate; dur: 4000">
+			</a-box>
+			<a-box 	position="-10 1 -5" depth="0.1" height="4" width="3" src="__homepage\Alex_panel_LL.png"
+					animation="property: opacity; from: 0.6 to: 2; loop: true; dir: alternate; dur: 4000">	
+			</a-box>
+			
+          <a-camera>
+            <a-cursor></a-cursor>
+          </a-camera>
+          <a-sky src="__homepage\space.jpg" color="gray"></a-sky>
+		  
+		  <a-sphere radius="0.5" color='#8e44ad' src="__homepage\planet.jpg" position="-8 0.5 5"
+                    animation = "property: rotation;
+                                 to: 0 360 0; 
+                                 loop: true; 
+                                 dur: 20000"></a-sphere>
+          <a-sphere radius="0.6" src="__homepage\planet.jpg" position="-5 0.5 5"
+                    animation = "property: rotation;
+                                 to: 0 360 0; 
+                                 loop: true; 
+                                 dur: 20000"></a-sphere>
+          <a-sphere radius="1" src="__homepage\earth.jpg" 
+                    position="-1 0.5 5" 
+                    sound="src: url(__homepage\Air_short.mp3); autoplay: true"
+                    animation = "property: rotation;
+                                 to: 0 360 0; 
+                                 loop: true; 
+                                 dur: 20000"
+                    animation__2="startEvents: click; 
+                                  loop: 1; 
+                                  dir: alternate; 
+                                  property: position; 
+                                  from: -1 0.5 5; 
+                                  to: -1 0.5 50; 
+                                  dur: 2000" 
+                    ></a-sphere>
+          <a-sphere radius="0.7" color='red' src="__homepage\planet.jpg" position="2 0.5 5"
+                    animation = "property: rotation;
+                                 to: 0 360 0; 
+                                 loop: true; 
+                                 dur: 20000"></a-sphere>
+          <a-sphere radius="1.5" color='orange' src="__homepage\planet.jpg" position="6 0.5 5"
+                    animation = "property: rotation;
+                                 to: 0 360 0; 
+                                 loop: true; 
+                                 dur: 20000"></a-sphere>
+          <a-sphere radius="1" color='#535c68' src="__homepage\planet.jpg" position="10 0.5 5"
+                    animation = "property: rotation;
+                                 to: 0 360 0; 
+                                 loop: true; 
+                                 dur: 20000"></a-sphere>
+          <a-sphere radius="0.7" color='skyblue' src="__homepage\planet.jpg" position="12 0.5 5"
+                    animation = "property: rotation;
+                                 to: 0 360 0; 
+                                 loop: true; 
+                                 dur: 20000"></a-sphere>
+          <a-sphere radius="0.5" color='blue' src="__homepage\planet.jpg" position="15 0.5 5"
+                    animation = "property: rotation;
+                                 to: 0 360 0; 
+                                 loop: true; 
+                                 dur: 20000"></a-sphere>
+        </a-scene>
+    </body>
+</html>
